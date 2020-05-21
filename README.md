@@ -1,1 +1,1 @@
-# 26TH_SOPT_WITH_DESIGN
+# 26TH_SOPT 디자인 합동 세미나 A조
