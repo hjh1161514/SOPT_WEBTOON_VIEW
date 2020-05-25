@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/icon_home"
+        android:title=""/>
+
+    <item android:id="@+id/menu_series"
+        android:icon="@drawable/icon_series"
+        android:title=""/>
+
+    <item android:id="@+id/menu_free"
+        android:icon="@drawable/icon_free"
+        android:title=""/>
+
+    <item android:id="@+id/menu_challenge"
+        android:icon="@drawable/icon_challenge"
+        android:title=""/>
+
+    <item android:id="@+id/menu_mypage"
+        android:icon="@drawable/icon_mypage"
+        android:title=""/>
+
+</menu>
