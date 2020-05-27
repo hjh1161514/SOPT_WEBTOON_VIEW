@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/challenge_all"
+        android:enabled="true"
+        android:title="@string/challenge_all"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/challenge_romance"
+        android:enabled="true"
+        android:title="@string/challenge_romance"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/challenge_thriller"
+        android:enabled="true"
+        android:title="@string/challenge_thriller"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/challenge_comic"
+        android:enabled="true"
+        android:title="@string/challenge_comic"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/challenge_fantasy"
+        android:enabled="true"
+        android:title="@string/challenge_fantasy"
+        app:showAsAction="ifRoom" />
 </menu>
