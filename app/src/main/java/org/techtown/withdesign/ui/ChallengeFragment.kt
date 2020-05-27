@@ -7,11 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.fragment_challenge.*
+import kotlinx.android.synthetic.main.fragment_super_challenge.*
 import org.techtown.withdesign.R
 import org.techtown.withdesign.ui.challenge.BasicChallengeFragment
 import org.techtown.withdesign.ui.challenge.SuperChallengeFragment
+import org.techtown.withdesign.ui.challenge.challengeRecycler.ChallengeAdapter
+import org.techtown.withdesign.ui.challenge.challengeRecycler.ChallengeData
 
 class ChallengeFragment : Fragment() {
 
