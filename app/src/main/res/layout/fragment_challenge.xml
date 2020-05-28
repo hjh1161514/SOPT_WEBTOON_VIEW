@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ui.ChallengeFragment">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,4 +23,61 @@
         android:layout_height="wrap_content"
         android:background="#f8f9fb"
         app:layout_constraintTop_toBottomOf="@+id/challenge_nav" />
+
+    <TextView
+        android:id="@+id/challenge_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/yun"
+        android:lineSpacingExtra="1sp"
+        android:text="레진 챌린지"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/challenge_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cha_btn_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/challenge_txt_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="43dp"
+        android:fontFamily="@font/yun"
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="[2020챌린지UP] 다시 돌아온 이벤트! 총 상금 500만원! (~5/31)"
+        android:textColor="#707070"
+        android:textFontWeight="400"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_txt_title" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/challenge_banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_txt_notice" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
