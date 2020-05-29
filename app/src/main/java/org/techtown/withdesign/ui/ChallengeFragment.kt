@@ -14,6 +14,7 @@ import org.techtown.withdesign.R
 import org.techtown.withdesign.ui.challenge.BasicChallengeFragment
 import org.techtown.withdesign.ui.challenge.SuperChallengeFragment
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.widget.NestedScrollView
 import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.fragment_challenge.*
 import kotlinx.android.synthetic.main.fragment_challenge.view.*
