@@ -171,14 +171,18 @@
             android:textStyle="bold" />
     </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/challenge_nav_list"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/challenge_list_nav"
         android:layout_width="match_parent"
-        android:layout_height="29dp"
-        app:itemTextColor="#000000"
+        android:layout_height="wrap_content"
         android:layout_marginTop="161dp"
-        android:background="#ffffff"
-        app:menu="@menu/challenge_nav_list" />
+        android:theme="@style/ChallengeListTabTheme">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/challenge_list_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/challenge_list_viewPager"

@@ -3,25 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#ffffff"
     tools:context=".ui.ChallengeFragment">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/challenge_nav"
         android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:background="#e42707"
-        app:itemTextAppearanceActive="@style/BottomNavigationView"
-        app:itemTextColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/challenge_nav" />
+        android:layout_height="wrap_content"
+        android:theme="@style/ChallengeTabTheme"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_banner">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/challenge_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/challenge_viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="#f8f9fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/challenge_nav" />
 
     <TextView

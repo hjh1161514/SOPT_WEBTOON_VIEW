@@ -67,6 +67,15 @@
             android:textColor="#e42707"
             android:textSize="9sp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="38dp"
+            app:srcCompat="@drawable/cha_ic_star" />
+
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

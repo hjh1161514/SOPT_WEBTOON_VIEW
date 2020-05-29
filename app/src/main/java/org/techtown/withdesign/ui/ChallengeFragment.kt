@@ -28,17 +28,17 @@ class ChallengeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(R.layout.fragment_challenge, container, false)
+        val view = inflater.inflate(R.layout.fragment_challenge, container, false)
 
         initBanner(view)
 
         return view
     }
 
-    private fun initBanner(v : View){
-       var bannerAdapter = ChallengeBannerAdapter(v.context)
+    private fun initBanner(v: View) {
+        var bannerAdapter = ChallengeBannerAdapter(v.context)
         bannerAdapter.apply {
-            addItem(ChallengeBannerData("Red Zone","mynameis392"))
+            addItem(ChallengeBannerData("Red Zone", "mynameis392"))
             addItem(ChallengeBannerData("Blue Zone", "yournameis392"))
             addItem(ChallengeBannerData("Green Zone", "ournameis392"))
         }
@@ -50,38 +50,16 @@ class ChallengeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        with(challenge_viewPager) {
-            adapter = ChallengePageAdapter(childFragmentManager)
-            offscreenPageLimit = 2
-            addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-                override fun onPageScrollStateChanged(state: Int) {
-                }
-
-                override fun onPageScrolled(
-                    position: Int,
-                    positionOffset: Float,
-                    positionOffsetPixels: Int
-                ) {
-                }
-
-                override fun onPageSelected(position: Int) {
-                    challenge_nav.menu.getItem(position).isChecked = true
-                }
-
-            })
-            challenge_nav.setOnNavigationItemReselectedListener {
-                when (it.itemId) {
-                    R.id.super_challenge -> challenge_viewPager.currentItem = 0
-                    R.id.basic_challenge -> challenge_viewPager.currentItem = 1
-                }
-            }
-        }
+        challenge_viewPager.adapter = ChallengePageAdapter(childFragmentManager)
+        challenge_tablayout.setupWithViewPager(challenge_viewPager)
     }
 }
 
 class ChallengePageAdapter(fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+
+    private val titleList = arrayListOf("슈퍼 챌린지", "챌린지")
+
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> SuperChallengeFragment()
@@ -90,4 +68,8 @@ class ChallengePageAdapter(fm: FragmentManager) :
     }
 
     override fun getCount() = 2
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return titleList[position]
+    }
 }
