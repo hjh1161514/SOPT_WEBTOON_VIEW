@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/todayrank_img"
+        android:layout_width="138dp"
+        android:layout_height="190dp"
+        android:src="@drawable/today_rank01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/blur"
+        android:layout_width="138dp"
+        android:layout_height="190dp"
+        android:src="@drawable/img_rank_gradation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/top_first"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-6.5dp"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/home_img_first"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todayrank_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todayrank_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="165dp"
+        android:text="레바"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/todayrank_img"
+        app:layout_constraintTop_toTopOf="@+id/todayrank_img" />
+
+    <TextView
+        android:id="@+id/todayrank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="145dp"
+        android:text="레바툰"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/todayrank_img"
+        app:layout_constraintTop_toTopOf="@+id/todayrank_img" />
+
+
+</FrameLayout>
