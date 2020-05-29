@@ -25,6 +25,16 @@ class HomeBannerAdapter (private val context : Context) : RecyclerView.Adapter<H
         val view = LayoutInflater.from(context).inflate(R.layout.homebanner_view_item,parent, false)
         view.layoutParams = ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
 
+        view.img_homeBanner.outlineProvider = object : ViewOutlineProvider() {
+
+            @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+            override fun getOutline(view: View?, outline: Outline?) {
+                outline?.setRoundRect(0, -50, view!!.width, (view.height).toInt(), 50f)
+            }
+        }
+
+        view.img_homeBanner.clipToOutline = true
+
         return HomeBannerVH(view)
     }
 
