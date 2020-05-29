@@ -32,12 +32,31 @@ class AllFragment : Fragment() {
             layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
         }
         datas.apply {
+            clear()
             add(
                 ChallengeData(
                     title = "안녕, 폐급요정",
                     author = "금요정",
                     date = "2020.5.19",
                     rate = "9.68",
+                    image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lezhin.com%2Fko%2Fchallenge%2Fcomics%2F1268&psig=AOvVaw2F5vEYmPI3067b9Z8Vs3La&ust=1590649219834000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJiDraC80-kCFQAAAAAdAAAAABAD"
+                )
+            )
+            add(
+                ChallengeData(
+                    title = "설이와 나",
+                    author = "우기",
+                    date = "2020.5.19",
+                    rate = "8.5",
+                    image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lezhin.com%2Fko%2Fchallenge%2Fcomics%2F1268&psig=AOvVaw2F5vEYmPI3067b9Z8Vs3La&ust=1590649219834000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJiDraC80-kCFQAAAAAdAAAAABAD"
+                )
+            )
+            add(
+                ChallengeData(
+                    title = "설이와 나",
+                    author = "우기",
+                    date = "2020.5.19",
+                    rate = "8.5",
                     image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lezhin.com%2Fko%2Fchallenge%2Fcomics%2F1268&psig=AOvVaw2F5vEYmPI3067b9Z8Vs3La&ust=1590649219834000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJiDraC80-kCFQAAAAAdAAAAABAD"
                 )
             )

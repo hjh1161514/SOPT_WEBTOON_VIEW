@@ -39,10 +39,10 @@ class ChallengeListPageAdapter(fm: FragmentManager) :
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> AllFragment()
-            1 -> RomanceFragment()
-            2 -> ThrillerFragment()
-            3 -> ComicFragment()
-            else -> FantasyFragment()
+            1 -> AllFragment()
+            2 -> AllFragment()
+            3 -> AllFragment()
+            else -> AllFragment()
         }
     }
 
