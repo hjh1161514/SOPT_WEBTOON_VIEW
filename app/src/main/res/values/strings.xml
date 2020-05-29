@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">WithDesign</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="super_challenge">슈퍼 챌린지</string>
+    <string name="challenge">챌린지</string>
+    <string name="challenge_all">전체</string>
+    <string name="challenge_romance">로맨스</string>
+    <string name="challenge_thriller">스릴러</string>
+    <string name="challenge_comic">코믹</string>
+    <string name="challenge_fantasy">판타지</string>
+
 </resources>

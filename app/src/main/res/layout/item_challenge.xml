@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="94dp">
+
+    <FrameLayout
+        android:id="@+id/challenge_frame"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/challenge_image"
+            android:layout_width="104dp"
+            android:layout_height="70dp"
+            android:layout_marginVertical="12dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/challenge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="제목입니다!"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/challenge_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="39dp"
+            android:text="작가 이름"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/challenge_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="67dp"
+            android:text="2020.20.20"
+            android:textColor="#d1d1d1"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/challenge_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="18dp"
+            android:text="9.04"
+            android:textColor="#e42707"
+            android:textSize="9sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="38dp"
+            app:srcCompat="@drawable/cha_ic_star" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ChallengeTabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#e42707</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="ChallengeListTabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">#e42707</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="colorAccent">#e42707</item>
+    </style>
 </resources>

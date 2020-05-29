@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#ffffff"
+    android:fillViewport="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.ChallengeFragment" >
+    android:layout_height="match_parent">
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.ChallengeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/challenge_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ChallengeTabTheme"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_banner">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/challenge_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:id="@+id/challenge_txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="레진 챌린지"
-        android:textSize="14sp"
-        android:lineSpacingExtra="1sp"
         android:fontFamily="@font/yun"
-        android:textFontWeight="400"
+        android:lineSpacingExtra="1sp"
+        android:text="레진 챌린지"
         android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,13 +63,13 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="43dp"
-        android:text="[2020챌린지UP] 다시 돌아온 이벤트! 총 상금 500만원! (~5/31)"
         android:fontFamily="@font/yun"
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="[2020챌린지UP] 다시 돌아온 이벤트! 총 상금 500만원! (~5/31)"
+        android:textColor="#707070"
         android:textFontWeight="400"
         android:textSize="10sp"
-        android:lineSpacingExtra="1sp"
-        android:textColor="#707070"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/challenge_txt_title" />
@@ -63,4 +83,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/challenge_txt_notice" />
+
+    <org.techtown.withdesign.module.CustomViewPager
+        android:id="@+id/challenge_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f9fb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_nav" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
