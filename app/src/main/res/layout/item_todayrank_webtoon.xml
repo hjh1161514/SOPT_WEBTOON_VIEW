@@ -65,6 +65,7 @@
         android:text="레바툰"
         android:textColor="#ffffff"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/todayrank_img"
         app:layout_constraintTop_toTopOf="@+id/todayrank_img" />
 
